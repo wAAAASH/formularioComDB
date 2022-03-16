@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+
+}
+
+.inputUser{
+    text-decoration: none;
+    font-family: LatoArial, Helvetica, sans-serif;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.inputLabel{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.inputUser:focus ~ .inputLabel,
+.inputUser:valid ~ .inputLabel{
+    top: -20px;
+    font-size: 13px;
+    color: white;;
+}
+
+#anoNasc{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#enviar {
+    width: 100%;
+    border: none;
+    padding: 5%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(159, 4, 248));
+    
+}
+#enviar:hover{
+    background-image: linear-gradient(to right, rgb(40, 132, 185), rgb(137, 26, 202));
+}
+
+#msg-sucesso{
+    
+    width: 420px;
+    margin: 10px auto;
+    font-size: 20px;
+    background-color: greenyellow;
+    border: 1px solid rgba(34, 139, 34, 0.5);
+   
+    
+}
+
+.msg-erro {
+    font-family: LatoArial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(40, 132, 185), rgb(137, 26, 202)); 
+    width: 430px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 170px auto;
+    padding: 13px;
+    background-color: rgbargb(40, 132, 185,.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: default;
+    
+    
+
+}
